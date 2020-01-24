@@ -3,8 +3,7 @@ import { Container, Row } from "reactstrap";
 import CharacterCard from "./CharacterCard";
 
 export default function CharacterList(props) {
-    console.log('props', props);
-    
+        
     return (
         <Container>
             <Row>

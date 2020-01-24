@@ -2,10 +2,9 @@ import React from "react";
 import { Card, CardHeader, CardBody, CardText, Col } from "reactstrap";
 
 export default function CharacterCard(props) {
-    console.log('Cardprops', props.character.homeworld);
-
+    
     return (
-        <Col xl="1" md="1" xs="1">
+        <Col>
             <Card>
                 <CardHeader>{props.character.name}</CardHeader>
                 <CardBody>

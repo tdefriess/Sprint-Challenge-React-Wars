@@ -16,8 +16,7 @@ const App = () => {
     Axios
       .get("https://swapi.co/api/people/")
       .then(response => {
-        setCharacters(response.data.results);
-        console.log(response.data.results);
+        setCharacters(response.data.results);        
       })
       .catch(err => {
         console.log("The data was not returned", err);
