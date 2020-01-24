@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a JS library specilized to make creating interactive UI easier, and to combine all elements of a component--HTML, CSS, and JS--into one single component within one file. In addition it seeks to solve the problem of highly interactive UI by providing a virtual DOM that is tracked by React which is then used to only update the DOM, and only specific elements, any time there is a change to the virtual DOM.
+
 - [ ] What does it mean to _think_ in react?
+
+To think in react means to consider what have traditionally been separate pieces of a component, the HTML to give meaning, the CSS to give style, and the JS to give functionality as all part of the same problem to be solved. Additionally, it means thinking in terms of changes to the DOM via the React virtual DOM.
 
 - [ ] Describe state.
 
+State is a private property of a given function that is tracked by React. When the state changes, React will run the function call again and then update the DOM with any changes to the React virtual DOM.
+
 - [ ] Describe props.
 
+Props are the properties that are passed from a parent function to a child function in a separate component module.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are function calls that only run any time there is a change in state. In order to sync effects to a specific change in state or props, you must add them to the final argument of useEffect within an array.
 
 ## Project Set Up
 
